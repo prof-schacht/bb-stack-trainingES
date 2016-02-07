@@ -1,0 +1,13 @@
+{
+  "id": "[stack]bigboards$bb-stack-elasticsearch-kibana",
+  "slug": "bb-stack-elasticsearch-kibana",
+  "name": "Kibana",
+  "description": "EXPERIMENTAL - things might break!!! Kibana is an open source data visualization platform that allows you to interact with your data through stunning, powerful graphics. From histograms to geomaps, Kibana brings your data to life with visuals that can be combined into custom dashboards that help you share insights from your data far and wide.",
+  "type": "stack",
+  "owner": "bigboards",
+  "logo": "http://blog.arungupta.me/wp-content/uploads/2015/07/kibana-logo.png",
+  "type": "stack",
+  "architecture": "all",
+  "supported_firmwares": ["feniks", "ember", "feniks-wip", "gemini"],
+  "uri": "https://gitlab.com/bigboards/bb-stack-elasticsearch-kibana.git"
+}

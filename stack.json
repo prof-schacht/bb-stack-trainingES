@@ -1,0 +1,53 @@
+{
+  "id": "[stack]bigboards$bb-stack-elasticsearch-kibana",
+  "views": [
+    {
+      "label": "Kibana",
+      "url": "http://{{ nodes[hex.name + '-n1'].ip }}:5601/",
+      "description": "The Kibana Dashboard"
+    }
+  ],
+  "containers": [
+    {
+      "name": "elasticsearch",
+      "image": "bigboards/elasticsearch",
+      "command": "/elasticsearch/bin/elasticsearch",
+      "ports": [
+        9200,
+        9300
+      ],
+      "config": {
+        "host_path": "elasticsearch",
+        "container_path": "elasticsearch/elasticsearch"
+      }
+    },
+    {
+      "name": "kibana",
+      "image": "bigboards/kibana",
+      "command": "/opt/kibana/bin/kibana",
+      "ports": [
+        5601
+      ],
+      "config": {
+        "host_path": "kibana",
+        "container_path": "/opt/kibana/config"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "name": "es_node",
+      "runs_on": "all",
+      "containers": [
+        "elasticsearch"
+      ]
+    },
+    {
+      "name": "kibana_node",
+      "runs_on": "n1",
+      "containers": [
+        "kibana"
+      ]
+    }
+  ]
+}
