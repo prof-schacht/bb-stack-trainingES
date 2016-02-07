@@ -208,7 +208,7 @@ path.data: /data/elasticsearch
 network.bind_host: 0
 network.host: _non_loopback_
 
-discovery.zen.ping.unicast.hosts: [ {{ansible_local.hex.network.prefix}}.1,  {{ansible_local.hex.network.prefix}}.2, {{ansible_local.hex.network.prefix}}.3, {{ansible_local.hex.network.prefix}}.4, {{ansible_local.hex.network.prefix}}.5,  {{ansible_local.hex.network.prefix}}.6 ]
+discovery.zen.ping.unicast.hosts: [ {{ansible_local.bb.hex.network.prefix}}.1,  {{ansible_local.bb.hex.network.prefix}}.2, {{ansible_local.bb.hex.network.prefix}}.3, {{ansible_local.bb.hex.network.prefix}}.4, {{ansible_local.bb.hex.network.prefix}}.5,  {{ansible_local.bb.hex.network.prefix}}.6 ]
 
 # Set the address other nodes will use to communicate with this node. If not
 # set, it is automatically derived. It must point to an actual IP address.
