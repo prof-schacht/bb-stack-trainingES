@@ -1,4 +1,4 @@
- file:
+- file:
    state: "directory"
    path: "{{ item }}"
    mode: "777"
