@@ -4,5 +4,5 @@
     path: "{{ item }}"
     mode: "777"
   with_items:
-    - "{{ generator.dirs.data }}"
-    - "{{ generator.dirs.config }}"
+    - "{{ dirs.role_data }}"
+    - "{{ dirs.config }}"
