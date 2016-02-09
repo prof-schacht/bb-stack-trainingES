@@ -1,7 +1,7 @@
 - file:
-  state: "directory"
-  path: "{{ item }}"
-  mode: "777"
+    state: "directory"
+    path: "{{ item }}"
+    mode: "777"
   with_items:
     - "{{ data_path }}"
     - "{{ config_path }}"
