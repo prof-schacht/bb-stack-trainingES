@@ -1,7 +1,8 @@
+
 - file:
     state: "directory"
     path: "{{ item }}"
     mode: "777"
   with_items:
-    - "{{ data_path }}"
-    - "{{ config_path }}"
+    - "{{ generator.dirs.data }}"
+    - "{{ generator.dirs.config }}"
