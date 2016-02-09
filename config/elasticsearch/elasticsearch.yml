@@ -156,7 +156,7 @@ index.number_of_shards: 6
 # space on creation. For example:
 #
 #path.data: /path/to/data1,/path/to/data2
-path.data: /data/elasticsearch
+path.data: /data
 
 # Path to temporary files:
 #
