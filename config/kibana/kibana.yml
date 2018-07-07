@@ -1,4 +1,4 @@
 server.name: kibana
 server.host: "0"
-elasticsearch.url: http://{{hex.name}}-n1:9200
-xpack.monitoring.ui.container.elasticsearch.enabled: false
+elasticsearch.url: http://10.20.39.1:9200
+xpack.monitoring.ui.container.elasticsearch.enabled: true
